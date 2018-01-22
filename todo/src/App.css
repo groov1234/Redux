@@ -1,0 +1,65 @@
+.Todo {
+  text-align: center;
+  background-color: slategray;
+  padding: 50px;
+  box-shadow: 0px 10px 15px 3px black;
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  border-left: 4px solid black;
+}
+
+.Todo-header {
+  background-color: azure;
+  height: 100px;
+  padding: 20px;
+  color: black;
+  box-shadow: 0px 2px 15px 3px black;
+}
+
+.Todo-title {
+  font-size: 4em;
+  margin: auto;
+}
+
+.Submit-todo {
+  display: flex;
+  flex-direction: row;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  width: 80px;
+  background-color: rgb(155, 231, 143);
+}
+
+.Todo-input {
+  display: flex;
+  width: 400px;
+  margin: auto;
+  color: black;
+  padding: 5px;
+}
+
+.Todos {
+  padding: 20px;
+  background-color: azure;
+  border: 2px solid black;
+  box-shadow: 0px 10px 2px 2px black;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.Todolist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  box-shadow: 0px 4px 2px 2px black;
+  justify-content: space-between;
+}
+
+.Remove-todo > button {
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: rgb(201, 129, 129);
+  color: white;
+}

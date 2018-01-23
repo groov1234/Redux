@@ -6,8 +6,9 @@ import { addTodo } from '../actions/index';
 const AddTodo = ({ dispatch }) => {
   let input;
   return (
-    <div className="Todo-input">
-      <form className="Todo-input"
+    <div>
+      <form
+        className="Input-box"
         onSubmit={todo => {
           todo.preventDefault();
           if (!input.value.trim()) {
@@ -15,13 +16,18 @@ const AddTodo = ({ dispatch }) => {
           }
           dispatch(addTodo(input.value));
           input.value = '';
-        }}>
-        <input className="Todo-input" placeholder="Add a Todo"
+        }}
+      >
+        <input
+          className="Input-empty"
+          placeholder="Add a Todo"
           ref={node => {
             input = node;
           }}
-        /> 
-        <button className="Submit-todo" type="submit">Submit</button>
+        />
+        <button className="Submit-todo" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );

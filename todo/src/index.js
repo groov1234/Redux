@@ -5,10 +5,14 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import reducers from './reducers';
+import reducers from './reducers/index.js';
 
 // create redux store
 const store = createStore(reducers);
+
+store.subscribe(() => {
+  console.log(`STORE HAS CHANGED: `, store.getState());
+});
 
 ReactDOM.render(
   <Provider store={store}>

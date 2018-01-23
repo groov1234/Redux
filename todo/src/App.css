@@ -17,7 +17,7 @@
 }
 
 .Todo-title {
-  font-size: 4em;
+  font-size: 2em;
   margin: auto;
 }
 
@@ -29,31 +29,21 @@
   text-align: center;
   width: 80px;
   background-color: rgb(155, 231, 143);
+  height: 25px;
 }
 
-.Todo-input {
+.Input-box {
   display: flex;
-  max-width: 600px;
   margin: auto;
   color: black;
-  padding: 10px;
-  height: 50px;
+  padding: 20px;
+  height: 25px;
+  max-width: 500px;
   justify-content: space-between;
 }
 
-.Todo-inputBox {
-  display: flex;
-  height: 20px;
-  width: 500px;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.Todo-inputBox button {
-  display: flex;
-  height: 25px;
-  text-align: center;
-  justify-content: center;
+.Input-empty {
+  width: 400px;
 }
 
 .Todos {
